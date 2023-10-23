@@ -19,7 +19,9 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'eko',
             'email' => 'eko@fic8.com',
+            'email_verified_at' => now(),
             'password' => Hash::make('12345'),
+            'roles' => 'mahasiswa',
         ]);
     }
 }
